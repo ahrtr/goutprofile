@@ -7,19 +7,19 @@ import (
 )
 
 func TestValidateFile1(t *testing.T) {
-	validateFileImpl(t, "./demo/demo1_utprofile.yml")
+	validateFileImpl(t, "./testdata/demo1_utprofile.yml")
 }
 
 func TestValidateFile2(t *testing.T) {
-	validateFileImpl(t, "./demo/demo2_utprofile.yml")
+	validateFileImpl(t, "./testdata/demo2_utprofile.yml")
 }
 
 func TestValidateDirWithoutRecursion(t *testing.T) {
-	validateDirImpl(t, "./demo", false, 2)
+	validateDirImpl(t, "./testdata", false, 2)
 }
 
 func TestValidateDirWithRecursion(t *testing.T) {
-	validateDirImpl(t, "./demo", true, 3)
+	validateDirImpl(t, "./testdata", true, 3)
 }
 
 func validateFileImpl(t *testing.T, fileName string) {

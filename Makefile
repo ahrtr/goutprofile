@@ -10,7 +10,7 @@ unitTest:
 	go test ${TEST_OPTS} .
 
 validate:
-	go run validate_profiles.go
+	go run cmd/goutprofile/main.go -d . 
 	
 build:
-	go build -ldflags "-X main.Version=$(VERSION)" -o gup ./cmd/goutprofile/main.go
+	go build -ldflags "-X main.Version=$(VERSION)" -o goutprofile ./cmd/goutprofile/main.go
