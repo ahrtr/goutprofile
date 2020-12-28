@@ -1,0 +1,58 @@
+# go ut profile
+source: demo1.go
+test: demo1_test.go
+description: this is the overview description for the profile
+cases:
+  - name: Case1
+    description: this is top case1
+  - name: Case2
+    description: this is top case2
+categories:
+  - name: category1
+    description: This is category 1
+    cases:
+    - name: Category1Case1
+      type: test 
+      description: |
+        This is the example description, and 
+        it spans more than 
+        one line
+    - name: Category1Case2
+      type: test 
+      description: |
+        This is the example description, and 
+        it spans more than 
+        one line       
+  - name: category2
+    description: This is category 2
+    cases:      
+    - name: Category2Case1
+      type: test 
+      description: |
+        This is the example description, and 
+        it spans more than 
+        one line
+    - name: Category2Case2
+      type: test 
+      description: |
+        This is the example description, and 
+        it spans more than 
+        one line      
+    categories:
+      - name: Category2Subcategory1
+        description: this is sub category 2-1
+        cases: 
+        - name: Category2Subcategory1Case1
+          description: This is Category2Subcategory1Case1
+        - name: Category2Subcategory1Case2
+          description: This is Category2Subcategory1Case2
+      - name: Category2Subcategory2
+        description: this is sub category 2-2
+        cases: 
+        - name: Category2Subcategory2Case1
+          type: benchmark
+          description: This is Category2Subcategory2Case1
+        - name: Category2Subcategory2Case2
+          type: benchmark
+          description: This is Category2Subcategory2Case2
+       

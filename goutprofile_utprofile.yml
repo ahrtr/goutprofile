@@ -1,0 +1,13 @@
+# go ut profile
+source: goutprofile.go
+test: goutprofile_test.go
+description: this is the overview description for the profile
+cases:
+  - name: ValidateFile1
+    description: this case validates a single UT profile demo1_utprofile.yml
+  - name: ValidateFile2
+    description: this case validates a single UT profile demo2_utprofile.yml 
+  - name: ValidateDirWithoutRecursion
+    description: this case validates a dir, without recursion
+  - name: ValidateDirWithRecursion
+    description: this case recursively validates a dir
