@@ -133,7 +133,7 @@ validate:
 ```
 
 # Exported functions
-There are two exported functions, 
+There are two exported functions in package github.com/ahrtr/goutprofile, 
 
 ```go
 // ValidateDir validates all the ut profiles in the specified directory dir.
@@ -141,7 +141,7 @@ There are two exported functions,
 // all its subdirectories as well.
 //
 // The first return parameter is a slice including all the profile names which
-// passes the validation. It stops validating immediately once any profile's
+// passed the validation. It stops validating immediately once any profile's
 // validation fails, and return an error in the second return parameter.
 func ValidateDir(dir string, recursive bool) ([]string, error) 
 

@@ -18,7 +18,7 @@ import (
 // all its subdirectories as well.
 //
 // The first return parameter is a slice including all the profile names which
-// passes the validation. It stops validating immediately once any profile's
+// passed the validation. It stops validating immediately once any profile's
 // validation fails, and return an error in the second return parameter.
 func ValidateDir(dir string, recursive bool) ([]string, error) {
 	validatedProfile := []string{}
