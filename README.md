@@ -51,7 +51,7 @@ A profile may contains the following fields,
 | Field name | Description |
 |------------|-------------|
 | source | The source file which the test file tests, it's demo3.go in this example.|
-| test   | The teset file, it's demo3_test.go in this example |
+| test   | The test file, it's demo3_test.go in this example |
 | description | The description for this profile |
 | cases | An array of test cases. Each case contains name, type and description. The type can be "test" or "benchmark". If type is not provided, then its value is "test" by default.|
 | categories | An array of categories of test cases. Each category has a name and description, and may contains an array of cases and an arry of subcategories. | 
